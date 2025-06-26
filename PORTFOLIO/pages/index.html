@@ -1,7 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Ing. Jhedrick</title>
   <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1><i class="fas fa-rocket"></i> ¡Hola! Soy Jhedrick</h1>
+        <p class="hero-subtitle">Ingeniero de Software & Desarrollador Full Stack</p>
+        <p>Bienvenido a mi portafolio profesional. Aquí encontrarás información sobre mí, mis competencias, experiencia y proyectos destacados. Me apasiona crear soluciones tecnológicas innovadoras que marquen la diferencia.</p>
+        <div class="hero-buttons">
+          <a href="portafolio.html" class="button"><i class="fas fa-code"></i> Ver proyectos</a>
+          <a href="contacto.html" class="button secondary"><i class="fas fa-envelope"></i> Contactar</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Desarrollador trabajando" />
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <i class="fas fa-project-diagram"></i>
+          <span class="stat-number">25+</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-clock"></i>
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Años Exp.</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Clientes</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="skills-preview">
+      <h2><i class="fas fa-star"></i> Mis Especialidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Desarrollo Frontend</h3>
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Frontend" class="skill-img" />
+          <p>React, Vue.js, HTML5, CSS3, JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>Desarrollo Backend</h3>
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Backend" class="skill-img" />
+          <p>Node.js, Python, Java, APIs REST</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Desarrollo Móvil</h3>
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Mobile" class="skill-img" />
+          <p>React Native, Flutter, Apps nativas</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>Bases de Datos</h3>
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Bases de datos" class="skill-img" />
+          <p>MySQL, MongoDB, PostgreSQL</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cta-section">
+      <h2><i class="fas fa-handshake"></i> ¿Listo para trabajar juntos?</h2>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Colaboración" class="cta-img" />
+      <p>Si buscas un desarrollador apasionado, creativo y con experiencia, estoy aquí para ayudarte a hacer realidad tus ideas.</p>
+      <a href="contacto.html" class="button large"><i class="fas fa-paper-plane"></i> Iniciar Proyecto</a>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
   <script src="../assets/script.js"></script>
-  <script>
-    fetch('../components/header.html').then(r => r.text()).then(html => { document.getElementById('header-placeholder').innerHTML = html; });
-    fetch('../components/footer.html').then(r => r.text()).then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
-    AOS.init({ duration: 900, once: true });
-  </script> 
+</body>
+</html> 

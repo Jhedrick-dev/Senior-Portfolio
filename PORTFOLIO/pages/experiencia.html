@@ -1,1 +1,99 @@
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia | Ing. Jhedrick</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="exp-hero">
+      <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80" alt="Experiencia" class="exp-img" />
+      <h1>Experiencia Profesional</h1>
+      <p>Aquí puedes conocer mi trayectoria profesional y los proyectos en los que he participado.</p>
+    </section>
+    
+    <section class="exp-section">
+      <h2>Experiencia Laboral</h2>
+      <div class="exp-grid">
+        <div class="experience-item">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Full Stack" class="exp-img-small" />
+          <h3>Desarrollador Full Stack</h3>
+          <p><strong>Empresa:</strong> Tech Solutions Inc.</p>
+          <p><strong>Período:</strong> 2022 - Presente</p>
+          <p>Desarrollo de aplicaciones web completas utilizando tecnologías modernas como React, Node.js y bases de datos SQL y NoSQL.</p>
+        </div>
+        <div class="experience-item">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Frontend" class="exp-img-small" />
+          <h3>Desarrollador Frontend</h3>
+          <p><strong>Empresa:</strong> Digital Innovations</p>
+          <p><strong>Período:</strong> 2020 - 2022</p>
+          <p>Creación de interfaces de usuario responsivas y accesibles utilizando HTML, CSS, JavaScript y frameworks modernos.</p>
+        </div>
+        <div class="experience-item">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Practicante" class="exp-img-small" />
+          <h3>Practicante de Desarrollo</h3>
+          <p><strong>Empresa:</strong> Startup Tech</p>
+          <p><strong>Período:</strong> 2019 - 2020</p>
+          <p>Participación en el desarrollo de aplicaciones móviles y web, aprendiendo las mejores prácticas del desarrollo de software.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="exp-section">
+      <h2>Proyectos Destacados</h2>
+      <div class="exp-proyectos-grid">
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Inventarios" class="exp-img-small" />
+          <h3>Sistema de gestión de inventarios</h3>
+          <p>Sistema completo para el control de stock, alertas automáticas y reportes de productividad. Desarrollado con Angular y Spring Boot.</p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="E-commerce" class="exp-img-small" />
+          <h3>Plataforma de e-commerce</h3>
+          <p>Plataforma completa de comercio electrónico con sistema de pagos, gestión de usuarios y panel administrativo avanzado.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80" alt="Delivery" class="exp-img-small" />
+          <h3>Aplicación móvil de delivery</h3>
+          <p>App móvil para servicio de delivery con geolocalización en tiempo real, notificaciones push y sistema de calificaciones.</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Google Maps</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Dashboard" class="exp-img-small" />
+          <h3>Dashboard de análisis de datos</h3>
+          <p>Dashboard interactivo para análisis empresarial con visualizaciones en tiempo real, reportes personalizables y exportación de datos.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">D3.js</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../assets/script.js"></script>
+  <script>
+    fetch('../components/header.html').then(r => r.text()).then(html => { document.getElementById('header-placeholder').innerHTML = html; });
+    fetch('../components/footer.html').then(r => r.text()).then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    AOS.init({ duration: 900, once: true });
+  </script>
+</body>
+</html> 

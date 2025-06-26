@@ -1,7 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competencias | Ing. Jhedrick</title>
   <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="competencias-hero">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Competencias" class="competencias-img" />
+      <h1>Mis Competencias</h1>
+      <p>Aquí puedes ver las habilidades y competencias que he desarrollado a lo largo de mi carrera profesional.</p>
+    </section>
+    
+    <section class="competencias-section">
+      <h2>Habilidades Técnicas</h2>
+      <div class="competencias-grid">
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Desarrollo Web" />
+          <h3>Desarrollo Web Frontend</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Backend" />
+          <h3>Desarrollo Web Backend</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Bases de Datos" />
+          <h3>Bases de Datos</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Análisis de Datos" />
+          <h3>Análisis de Datos</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Gestión de Proyectos" />
+          <h3>Gestión de Proyectos</h3>
+        </div>
+      </div>
+      <ul>
+        <li>Desarrollo Web Frontend</li>
+        <li>Desarrollo Web Backend</li>
+        <li>Bases de Datos</li>
+        <li>Análisis de Datos</li>
+        <li>Gestión de Proyectos</li>
+      </ul>
+    </section>
+    
+    <section class="competencias-section">
+      <h2>Habilidades Blandas</h2>
+      <div class="competencias-grid">
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80" alt="Trabajo en Equipo" />
+          <h3>Trabajo en Equipo</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Comunicación" />
+          <h3>Comunicación Efectiva</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Resolución de Problemas" />
+          <h3>Resolución de Problemas</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Gestión del Tiempo" />
+          <h3>Gestión del Tiempo</h3>
+        </div>
+        <div class="competencia-card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Liderazgo" />
+          <h3>Liderazgo</h3>
+        </div>
+      </div>
+      <ul>
+        <li>Trabajo en Equipo</li>
+        <li>Comunicación Efectiva</li>
+        <li>Resolución de Problemas</li>
+        <li>Gestión del Tiempo</li>
+        <li>Liderazgo</li>
+      </ul>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
   <script src="../assets/script.js"></script>
   <script>
     fetch('../components/header.html').then(r => r.text()).then(html => { document.getElementById('header-placeholder').innerHTML = html; });
     fetch('../components/footer.html').then(r => r.text()).then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
     AOS.init({ duration: 900, once: true });
-  </script> 
+  </script>
+</body>
+</html> 

@@ -1,1 +1,118 @@
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | Ing. Jhedrick</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="portafolio-hero">
+      <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=800&q=80" alt="Proyectos" class="portafolio-img" />
+      <h1>Mis Proyectos</h1>
+      <p>Aquí puedes ver algunos de los proyectos más destacados en los que he trabajado.</p>
+    </section>
+    
+    <section>
+      <h2>Proyectos Destacados</h2>
+      <div class="portafolio-grid">
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="E-commerce" class="portafolio-img-small" />
+          <h3>E-commerce Platform</h3>
+          <p>Plataforma completa de comercio electrónico desarrollada con React, Node.js y MongoDB. Incluye sistema de pagos, gestión de inventarios y panel administrativo.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Dashboard" class="portafolio-img-small" />
+          <h3>Dashboard Analytics</h3>
+          <p>Dashboard interactivo para análisis de datos empresariales con visualizaciones en tiempo real y reportes personalizables.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">D3.js</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80" alt="Mobile Delivery" class="portafolio-img-small" />
+          <h3>Mobile Delivery App</h3>
+          <p>Aplicación móvil para servicio de delivery con geolocalización, notificaciones push y sistema de calificaciones.</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Google Maps</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Inventory" class="portafolio-img-small" />
+          <h3>Inventory Management System</h3>
+          <p>Sistema de gestión de inventarios con control de stock, alertas automáticas y reportes de productividad.</p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Proyectos Personales</h2>
+      <div class="portafolio-grid">
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Blog" class="portafolio-img-small" />
+          <h3>Blog personal con CMS personalizado</h3>
+          <p>Blog desarrollado con sistema de gestión de contenido personalizado, editor de texto enriquecido y panel de administración completo.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Tareas" class="portafolio-img-small" />
+          <h3>App de gestión de tareas</h3>
+          <p>Aplicación web para gestión de tareas con categorías, prioridades, fechas límite y recordatorios automáticos.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80" alt="Portfolio" class="portafolio-img-small" />
+          <h3>Portfolio web responsive</h3>
+          <p>Portfolio personal con diseño moderno, animaciones suaves y completamente responsive para todos los dispositivos.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="API REST" class="portafolio-img-small" />
+          <h3>API REST para servicios web</h3>
+          <p>API RESTful completa con autenticación JWT, documentación automática y endpoints para gestión de usuarios y datos.</p>
+          <div class="project-tags">
+            <span class="tag">Express.js</span>
+            <span class="tag">JWT</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../assets/script.js"></script>
+  <script>
+    fetch('../components/header.html').then(r => r.text()).then(html => { document.getElementById('header-placeholder').innerHTML = html; });
+    fetch('../components/footer.html').then(r => r.text()).then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    AOS.init({ duration: 900, once: true });
+  </script>
+</body>
+</html> 

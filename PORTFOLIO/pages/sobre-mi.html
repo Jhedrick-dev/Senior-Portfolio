@@ -1,7 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí | Ing. Jhedrick</title>
   <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="sobre-hero">
+      <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=800&q=80" alt="Sobre mí" class="sobre-img" />
+      <h1>Sobre Mí</h1>
+      <p>Hola, soy Jhedrick, un ingeniero apasionado por la tecnología y la innovación. Me especializo en desarrollo de software y soluciones tecnológicas.</p>
+    </section>
+    
+    <section class="sobre-section">
+      <h2>Mi Historia</h2>
+      <div class="sobre-content">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Historia" class="sobre-img-content" />
+        <div class="sobre-text">
+          <p>Desde que comencé mi carrera en ingeniería, he estado constantemente aprendiendo y adaptándome a las nuevas tecnologías. Mi objetivo es crear soluciones que hagan una diferencia real en la vida de las personas.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sobre-section">
+      <h2>Educación</h2>
+      <div class="sobre-content">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Educación" class="sobre-img-content" />
+        <div class="sobre-text">
+          <ul>
+            <li>Ingeniería en Sistemas Computacionales</li>
+            <li>Certificaciones en desarrollo web</li>
+            <li>Cursos especializados en nuevas tecnologías</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sobre-section">
+      <h2>Intereses</h2>
+      <div class="sobre-content">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Intereses" class="sobre-img-content" />
+        <div class="sobre-text">
+          <p>Me apasiona la inteligencia artificial, el desarrollo web moderno y la creación de experiencias de usuario excepcionales. En mi tiempo libre, disfruto aprendiendo nuevas tecnologías y contribuyendo a proyectos de código abierto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
   <script src="../assets/script.js"></script>
   <script>
     fetch('../components/header.html').then(r => r.text()).then(html => { document.getElementById('header-placeholder').innerHTML = html; });
     fetch('../components/footer.html').then(r => r.text()).then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
     AOS.init({ duration: 900, once: true });
-  </script> 
+  </script>
+</body>
+</html> 

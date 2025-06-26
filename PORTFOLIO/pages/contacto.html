@@ -1,1 +1,193 @@
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Ing. Jhedrick</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="contacto-hero">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Contacto" class="contacto-img" />
+      <h1>Contacto</h1>
+      <p>¿Te gustaría trabajar juntos en un proyecto? ¡No dudes en contactarme!</p>
+    </section>
+    
+    <section class="contacto-section">
+      <h2>Información de Contacto</h2>
+      <div class="contact-info">
+        <div class="contact-info-hero">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=90" alt="Info" class="contacto-img-high" />
+          <div class="contact-icons-overlay">
+            <div class="contact-icon-item" title="Email">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </div>
+            <div class="contact-icon-item" title="Teléfono">
+              <i class="fas fa-phone"></i>
+              <span>Teléfono</span>
+            </div>
+            <div class="contact-icon-item" title="Ubicación">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ubicación</span>
+            </div>
+            <div class="contact-icon-item" title="Disponibilidad">
+              <i class="fas fa-clock"></i>
+              <span>Disponible</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-details">
+          <p><strong>Email:</strong> jhedrick@example.com</p>
+          <p><strong>Teléfono:</strong> +1 (555) 123-4567</p>
+          <p><strong>Ubicación:</strong> Ciudad, País</p>
+          <p><strong>Disponibilidad:</strong> Abierto a nuevas oportunidades</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contacto-section">
+      <h2>Envíame un Mensaje</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre completo:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="button">Enviar Mensaje</button>
+      </form>
+    </section>
+    
+    <section class="contacto-section">
+      <h2>Galería de Proyectos</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-slide active">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=90" alt="Proyecto 1" />
+            <div class="carousel-caption">
+              <h3>Desarrollo Web</h3>
+              <p>Aplicaciones modernas y responsivas</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=90" alt="Proyecto 2" />
+            <div class="carousel-caption">
+              <h3>Backend Development</h3>
+              <p>APIs robustas y escalables</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=800&q=90" alt="Proyecto 3" />
+            <div class="carousel-caption">
+              <h3>Mobile Apps</h3>
+              <p>Aplicaciones móviles nativas</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=90" alt="Proyecto 4" />
+            <div class="carousel-caption">
+              <h3>Data Analytics</h3>
+              <p>Análisis y visualización de datos</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contacto-section">
+      <h2>Redes Sociales</h2>
+      <div class="social-hero">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Redes Sociales" class="social-bg-img" />
+        <div class="social-icons-overlay">
+          <a href="#" class="social-icon-overlay" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-icon-overlay" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-icon-overlay" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon-overlay" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="../assets/script.js"></script>
+  <script>
+    fetch('../components/header.html').then(r => r.text()).then(html => { document.getElementById('header-placeholder').innerHTML = html; });
+    fetch('../components/footer.html').then(r => r.text()).then(html => { document.getElementById('footer-placeholder').innerHTML = html; });
+    AOS.init({ duration: 900, once: true });
+    
+    // Carrusel functionality
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlide(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("carousel-slide");
+      let dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    // Auto slide
+    setInterval(() => {
+      changeSlide(1);
+    }, 4000);
+  </script>
+</body>
+</html> 
